@@ -1,3 +1,9 @@
+<?php
+if($_POST["message"]) {
+    mail("harrisonju@gmail.com", "Form to email message", $_POST["message"], "From: harrisonju@gmail.com");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Page Title -->
-    <title> Yewon and Danny's Wedding </title>
+    <title> Yeiwon and Danny's Wedding </title>
 
     <!-- Favicon and Touch Icons -->
     <link href="images/favicon/favicon.png" rel="shortcut icon" type="image/png">
@@ -56,21 +62,6 @@
             </div>
         </div>
         <!-- end preloader -->
-
-
-        <!-- strat music-box -->
-        <div class="music-box">
-            <button class="music-box-toggle-btn">
-                <i class="fa fa-music"></i>
-            </button>
-
-            <div class="music-holder">
-                <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/102137206&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
-            </div>
-        </div>
-        <!-- end music box -->
-
-
         <!-- start of hero -->
         <section class="hero">
             <div class="hero-slider hero-slider-s1">
@@ -134,7 +125,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="couple-logo">
-                            <h1><a href="#home">S <i class="fi flaticon-shape-1"></i> F</a></h1>
+                            <h1><a href="#home">Y <i class="fi flaticon-shape-1"></i> D</a></h1>
                         </div>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
@@ -147,21 +138,6 @@
                             <li><a href="#people">People</a></li>
                             <li><a href="#gallery">Gallery</a></li>
                             <li><a href="#rsvp">RSVP</a></li>
-                            <li class="menu-item-has-children">
-                                <a href="javascript:void(0);">Blog</a>
-                                <ul class="sub-menu">
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#Level3">Third level</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Level3</a></li>
-                                            <li><a href="#">Level3</a></li>
-                                            <li><a href="#">Level3</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
                         </ul>
                     </div><!-- end of nav-collapse -->
                 </div><!-- end of container -->
@@ -177,19 +153,11 @@
                     <div class="col col-xs-12">
                         <div class="gb groom">
                             <div class="img-holder wow fadeInLeftSlow">
-                                <img src="images/couple/img-1.jpg" alt>
+                                <img src="images/couple/img-2.jpg" alt>
                             </div>
-                            <div class="details">
-                                <div class="details-inner">
-                                    <h3>The groom</h3>
-                                    <p>Hi I am Danny , I love long walks on the beach. I also like chocolate mint icecream from Baskin Robins. I am a master of internal auditing and my favorite people are people of the finance world. From the 1500s.</p>
-                                    <span class="signature">Danny</span>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    </ul>
+                            <div class="gb bride">
+                                <div class="img-holder wow fadeInRightSlow">
+                                    <img src="images/couple/img-1.jpg" alt>
                                 </div>
                             </div>
                         </div>
@@ -197,18 +165,12 @@
                             <div class="details">
                                 <div class="details-inner">
                                     <h3>The Bride</h3>
-                                    <p>Hi I am Yeiwon , dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                                    <span class="signature">Yeiwon</span>
-                                    <ul class="social-links">
-                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                    </ul>
                                 </div>
                             </div>
-                            <div class="img-holder wow fadeInRightSlow">
-                                <img src="images/couple/img-2.jpg" alt>
+                            <div class="details">
+                                <div class="details-inner">
+                                    <h3>The Groom</h3>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -246,6 +208,8 @@
                         <div class="section-title">
                             <div class="vertical-line"><span><i class="fi flaticon-two"></i></span></div>
                             <h2>Our love story</h2>
+                            <p>Yeiwon and Danny first met in the Fall of 2011 on the 4th floor of Clemens Library at the University of Virginia. One day, Danny was at the library and ran into a friend from high school (Alice Hong, the Matron of Honor). Danny went to go say “Hi” and was introduced to Yeiwon for the first time. Immediately, he thought, “Wow, she’s really pretty!”, but as his closest friends and families know, Danny was a skinny, nerd who had no chance at the time. Fast forward 5 years, Yeiwon just finished her first year in VCU Pharmacy School, and through her classmate and Danny’s closest friend (David Lee, the Best Man), Danny was finally able to hang out with Yeiwon for the first time. After a month of playing hard to get, we both confessed our feelings for each other and the rest is history!
+                                Over 2 years’ worth of memories together, they’ve traveled to LA and Orlando, attended multiple weddings as couples, watched several musicals, drank countless bobas, and most importantly they were there for each other at all times. On 8/11/2018, Danny finally gained the courage to ask his best friend, Yeiwon, to marry him and she said, “YES!”. They can’t wait to celebrate the beginning of their next chapter in life with their friends and familes!</p>
                         </div>
                     </div>
                 </div> <!-- end section-title -->
@@ -257,21 +221,17 @@
                                 <div class="col col-md-6">
                                     <div class="story-text right-align-text">
                                         <h3>First meet</h3>
-                                        <span class="date">Jan 12 2017</span>
-                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, </p>
+                                        <span class="date">Fall 2011</span>
                                     </div>
                                 </div>
                                 <div class="col col-md-6">
                                     <div class="img-holder">
-                                        <img src="images/story/img-1.jpg" alt class="img img-responsive">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col col-md-6">
                                     <div class="img-holder right-align-text story-slider">
-                                        <img src="images/story/img-2.jpg" alt class="img img-responsive">
-                                        <img src="images/story/img-3.jpg" alt class="img img-responsive">
                                     </div>
                                 </div>
                                 <div class="col col-md-6 text-holder">
@@ -280,8 +240,7 @@
                                     </span>
                                     <div class="story-text">
                                         <h3>First date</h3>
-                                        <span class="date">Feb 14 2017</span>
-                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, </p>
+                                        <span class="date">July 4 2016</span>
                                     </div>
                                 </div>
                             </div>
@@ -292,24 +251,17 @@
                                     </span>
                                     <div class="story-text right-align-text">
                                         <h3>Proposal</h3>
-                                        <span class="date">Apr 14 2017</span>
-                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, </p>
+                                        <span class="date">August 11 2018</span>
                                     </div>
                                 </div>
                                 <div class="col col-md-6">
                                     <div class="img-holder right-align-text story-slider">
-                                        <img src="images/story/img-7.jpg" alt class="img img-responsive">
-                                        <img src="images/story/img-5.jpg" alt class="img img-responsive">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col col-md-6">
                                     <div class="img-holder video-holder">
-                                        <img src="images/story/img-8.jpg" alt class="img img-responsive">
-                                        <a href="https://www.youtube.com/embed/XSGBVzeBUbk?autoplay=1" data-type="iframe" class="video-play-btn">
-                                            <i class="fa fa-play"></i>
-                                        </a>
                                     </div>
                                 </div>
                                 <div class="col col-md-6 text-holder">
@@ -317,9 +269,8 @@
                                         <i class="fa fa-heart"></i>
                                     </span>
                                     <div class="story-text">
-                                        <h3>Enagagement</h3>
-                                        <span class="date">Jul 14 2017</span>
-                                        <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, </p>
+                                        <h3>Wedding</h3>
+                                        <span class="date">June 8 2019</span>
                                     </div>
                                 </div>
                             </div>
@@ -360,35 +311,13 @@
                 <div class="row">
                     <div class="col col-lg-10 col-lg-offset-1">
                         <div class="event">
-                            <div class="img-holder">
-                                <img src="images/events/img-1.jpg" alt class="img img-responsive">
-                            </div>
                             <div class="details">
-                                <h3>The reception</h3>
+                                <h3>Ceremony And Reception</h3>
                                 <ul>
-                                    <li><i class="fa fa-map-marker"></i> 32 big bro road, Chanpai, London.</li>
-                                    <li><i class="fa fa-clock-o"></i> Nov 25 2017, 9AM - 5PM</li>
+                                    <li>Tranquility Farm.</li>
+                                    <li><i class = "fa fa-map-marker"></i> 18061 Tranquility Rd Purcellville, VA 20132</li>
+                                    <li><i class="fa fa-clock-o"></i>4:30PM - 10PM</li>
                                 </ul>
-                                <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                                <a class="see-location-btn popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25211.21212385712!2d144.95275648773628!3d-37.82748510398018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce7e0!2zTWVsYm91cm5lIFZJQyAzMDA0LCDgpoXgprjgp43gpp_gp43gprDgp4fgprLgpr_gpq_gprzgpr4!5e0!3m2!1sbn!2sbd!4v1503742051881">
-                                    See location <i class="fa fa-angle-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="event">
-                            <div class="img-holder">
-                                <img src="images/events/img-2.jpg" alt class="img img-responsive">
-                            </div>
-                            <div class="details">
-                                <h3>Wedding party</h3>
-                                <ul>
-                                    <li><i class="fa fa-map-marker"></i> 32 big bro road, Chanpai, London.</li>
-                                    <li><i class="fa fa-clock-o"></i> Nov 25 2017, 9AM - 5PM</li>
-                                </ul>
-                                <p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                                <a class="see-location-btn popup-gmaps" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.0160484383277!2d144.99053291585201!3d-37.81309307975254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642ef89a7e023%3A0xb1353055e38c1ab8!2sNew+York+Tomato+Cafe!5e0!3m2!1sbn!2sbd!4v1503743893919">
-                                    See location <i class="fa fa-angle-right"></i>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -433,14 +362,8 @@
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Jhon Michel</h3>
+                                            <h3>David Lee</h3>
                                             <span>Best man</span>
-                                            <ul class="social-links">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
                                         </div>
                                     </div>
                                     <div class="grid">
@@ -450,14 +373,8 @@
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Chasmoos jhon</h3>
-                                            <span>Best friden</span>
-                                            <ul class="social-links">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
+                                            <h3>Ryan Choi</h3>
+                                            <span>Groomsmen</span>
                                         </div>
                                     </div>
                                     <div class="grid">
@@ -467,14 +384,8 @@
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Kaiste pate</h3>
-                                            <span>Friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
+                                            <h3>Andrew Shim</h3>
+                                            <span>Groomsmen</span>
                                         </div>
                                     </div>
                                     <div class="grid">
@@ -484,48 +395,8 @@
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Hatu Michel</h3>
-                                            <span>Friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="grid">
-                                        <div class="img-holder">
-                                            <a href="images/groomsmen/img-5.jpg" class="popup-image">
-                                                <img src="images/groomsmen/img-5.jpg" alt class="img img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="details">
-                                            <h3>Michel doin</h3>
-                                            <span>Friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="grid">
-                                        <div class="img-holder">
-                                            <a href="images/groomsmen/img-6.jpg" class="popup-image">
-                                                <img src="images/groomsmen/img-6.jpg" alt class="img img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="details">
-                                            <h3>Topper jone</h3>
-                                            <span>Friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
+                                            <h3>Jisung Kim</h3>
+                                            <span>Groomsmen</span>
                                         </div>
                                     </div>
                                 </div>
@@ -538,14 +409,8 @@
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Rachel Li</h3>
-                                            <span>Made of honor</span>
-                                            <ul class="social-links">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
+                                            <h3>Alice Hong</h3>
+                                            <span>Matron of Honor</span>
                                         </div>
                                     </div>
                                     <div class="grid">
@@ -555,14 +420,8 @@
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Male Vign</h3>
-                                            <span>Best friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
+                                            <h3>Pureun Noh</h3>
+                                            <span>Bridesmaid</span>
                                         </div>
                                     </div>
                                     <div class="grid">
@@ -572,65 +431,8 @@
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Jonny Mich</h3>
-                                            <span>Friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="grid">
-                                        <div class="img-holder">
-                                            <a href="images/bridesmaid/img-4.jpg" class="popup-image">
-                                                <img src="images/bridesmaid/img-4.jpg" alt class="img img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="details">
-                                            <h3>Brodd Wid</h3>
-                                            <span>Friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="grid">
-                                        <div class="img-holder">
-                                            <a href="images/bridesmaid/img-5.jpg" class="popup-image">
-                                                <img src="images/bridesmaid/img-5.jpg" alt class="img img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="details">
-                                            <h3>Nokshal bedi</h3>
-                                            <span>Friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="grid">
-                                        <div class="img-holder">
-                                            <a href="images/bridesmaid/img-6.jpg" class="popup-image">
-                                                <img src="images/bridesmaid/img-6.jpg" alt class="img img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="details">
-                                            <h3>Holly Fie</h3>
-                                            <span>Friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
+                                            <h3>Sara Oh</h3>
+                                            <span>Bridesmaid</span>
                                         </div>
                                     </div>
                                 </div>
@@ -658,12 +460,6 @@
                 <div class="row">
                     <div class="col col-xs-12 sortable-gallery">
                         <div class="gallery-filters">
-                            <ul>
-                                <li><a data-filter="*" href="#" class="current">All</a></li>
-                                <li><a data-filter=".wedding" href="#">Wedding</a></li>
-                                <li><a data-filter=".ceremony" href="#">Ceremony</a></li>
-                                <li><a data-filter=".party" href="#">Party</a></li>
-                            </ul>
                         </div>
 
                         <div class="gallery-container gallery-fancybox masonry-gallery">
@@ -740,33 +536,29 @@
 
                 <div class="row content">
                     <div class="col col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                        <p>Please reserve before December 16th, 2017.</p>
+                        <p>Please reserve before April 20th, 2019.</p>
                         <form id="rsvp-form" class="form validate-rsvp-form row" method="post">
                             <div class="col col-sm-6">
-                                <input type="text" name="name" class="form-control" placeholder="Your Name*">
+                                <input type="text" name="name" class="form-control" placeholder="Your Name">
                             </div>
                             <div class="col col-sm-6">
-                                <input type="email" name="email" class="form-control" placeholder="Your Email*">
-                            </div>
-                            <div class="col col-sm-6">
-                                <select class="form-control" name="guest" >
-                                    <option disabled selected>Number Of Guest*</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
+                                <select class="form-control" name="attending" placeholder="Attending">
+                                    <option>Accept with Pleasure</option>
+                                    <option>Decline with Regret</option>
                                 </select>
                             </div>
                             <div class="col col-sm-6">
-                                <select class="form-control" name="events" >
-                                    <option disabled selected>I Am Attending*</option>
-                                    <option>Al events</option>
-                                    <option>Wedding ceremony</option>
-                                    <option>Reception party</option>
+                                <input type="text" name ="guest" class="form-control" placeholder="Number Of Guests(if allowed)">
+                            </div>
+                            <div class="col col-sm-6">
+                                <select class="form-control" name="food" >
+                                    <option disabled selected>Food Menu</option>
+                                    <option>London Broil(Beef)</option>
+                                    <option>Salmon</option>
                                 </select>
                             </div>
                             <div class="col col-sm-12">
-                                <textarea class="form-control" name="notes" placeholder="Your Message*"></textarea>
+                                <textarea class="form-control" name="notes" placeholder="Food Allergies and/or Dietary Restrictions"></textarea>
                             </div>
                             <div class="col col-sm-12 submit-btn">
                                 <button type="submit" class="submit">Send Invitation</button>
@@ -784,31 +576,31 @@
         <!-- end rsvp-section -->
 
 
-        <!-- start getting-there-section -->
-        <section class="getting-there-section section-padding">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="section-title-white">
-                            <div class="vertical-line"><span><i class="fi flaticon-two"></i></span></div>
-                            <h2>Getting there</h2>
-                        </div>
-                    </div>
-                </div> <!-- end section-title -->
+        <!--&lt;!&ndash; start getting-there-section &ndash;&gt;-->
+        <!--<section class="getting-there-section section-padding">-->
+            <!--<div class="container">-->
+                <!--<div class="row">-->
+                    <!--<div class="col col-xs-12">-->
+                        <!--<div class="section-title-white">-->
+                            <!--<div class="vertical-line"><span><i class="fi flaticon-two"></i></span></div>-->
+                            <!--<h2>Getting there</h2>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div> &lt;!&ndash; end section-title &ndash;&gt;-->
 
-                <div class="row content">
-                    <div class="col col-md-6">
-                        <h3>Transportation</h3>
-                        <p> industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>
-                    </div>
-                    <div class="col col-md-6">
-                        <h3>Accommodations</h3>
-                        <p> industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>
-                    </div>
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </section>
-        <!-- end getting-there-section -->
+                <!--<div class="row content">-->
+                    <!--<div class="col col-md-6">-->
+                        <!--<h3>Transportation</h3>-->
+                        <!--<p> industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>-->
+                    <!--</div>-->
+                    <!--<div class="col col-md-6">-->
+                        <!--<h3>Accommodations</h3>-->
+                        <!--<p> industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s</p>-->
+                    <!--</div>-->
+                <!--</div> &lt;!&ndash; end row &ndash;&gt;-->
+            <!--</div> &lt;!&ndash; end container &ndash;&gt;-->
+        <!--</section>-->
+        <!--&lt;!&ndash; end getting-there-section &ndash;&gt;-->
 
 
         <!-- start gift-registration-section -->
@@ -859,8 +651,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
-                        <h2>Forever and Always Our Love</h2>
-                        <span>- Mick (The groom)</span>
+                        <h2>6.8.19</h2>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
